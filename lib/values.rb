@@ -9,6 +9,12 @@ require 'pry'
 # }
 
 def get_the_values(groceries)
-  groceries.values.join()
+  valArray = []
+  groceries.values.each{|items| 
+    items.each{|val|
+      valArray << val
+    }
+  }
+  valArray
   #code your solution here!
 end
